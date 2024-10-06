@@ -1,12 +1,16 @@
-<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Happy Birthday</title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Changa+One&effect=anaglyph');
+
         body {
             font-family: 'Wendy One', sans-serif;
             background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
-            background-image: -webkit-radial-gradient(#374566, #010203);
+            background-image: -webkit-radial-gradient(#ffffff, #010203);
             background-image: -moz-radial-gradient(#374566, #010203);
             background-image: -o-radial-gradient(#374566, #010203);
             background-image: radial-gradient(#374566, #010203);
@@ -97,10 +101,9 @@
 
         span {
             font-size: 4.8em;
-            color: rgb(245, 241, 241);
+            color: rgb(245, 236, 236);
             position: relative;
-            opacity: 0.8; 
-
+            opacity: 0.8;
             top: 30px;
             left: 50%;
             margin-left: -27px;
@@ -201,11 +204,20 @@
             color: rgb(255, 255, 255);
             font-size: 3.5em;
         }
+
+        .font-effect-anaglyph {
+            font-family: 'Changa One', cursive;
+            font-size: 3.5em;
+            text-align: center;
+            color: #FFFFFF;
+            font-effect: anaglyph;
+            opacity: .8;
+        }
     </style>
     <script>
         window.open = function() {};
         window.print = function() {};
-        // Support hover state for mobile.
+        
         if (false) {
             window.ontouchstart = function() {};
         }
@@ -216,27 +228,32 @@
 <body>
     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
     <div class="container">
-        <div class="balloon"> 
+        <div class="balloon">
             <div><span>H</span></div>
             <div><span>B</span></div>
             <div><span>D</span></div>
             <div><span>A</span></div>
             <div><span>Y</span></div>
             <div><span>!</span></div>
-        </div> 
+        </div>
 
-        <h1 style="position: absolute; top: 950px; left: 45%;">Sam☠️</h1>
-        <p style="color: white; position: absolute; top: 1050px; left: 10%;font-size: 25px;">Happy Birthday! May your year ahead be as thrilling as a last-minute goal and as bright as the spotlight on the pitch. Keep chasing your dreams, on and off the field!</p>
-        <p style="color: white; position: absolute; top: 350px; left: 10%;font-size: 150px;">
-            <img src="pic.png" alt="Birthday GIF">
+        <!-- Anaglyph effect applied to this h1 -->
+        <h1 class="font-effect-anaglyph" style="position: absolute; top: 850px; left: 40%;">Hay Sam☠️</h1>
+
+        <p class="font-effect-anaglyph" style="color: white; position: absolute; top: 1060px;font-size: 30px ; opacity: 0.75;">
+            Happy Birthday! May your year ahead be as thrilling as a last-minute goal and as bright as the spotlight on the pitch. Keep chasing your dreams, on and off the field!
         </p>
-        <p style="color: white; position: absolute; top: 1130px; left: 80%;font-size: 26px;">-Mubin.</p>
+        <p style="color: white; position: absolute; top: 350px; left: 5%;font-size: 150px;">
+            <img src="pic.png" alt="pic" style="opacity: 0.65;">
+        </p>
+        <p class="font-effect-anaglyph" style="color: white; position: absolute; top: 1170px; left: 85%;font-size: 30px;opacity: .75;">-Mubin.</p>
     </div>
 
-    <!-- <script>
+    <script>
         if (document.location.search.match(/type=embed/gi)) {
             window.parent.postMessage('resize', "*");
         }
-    </script> -->
+    </script>
 </body>
+
 </html>
